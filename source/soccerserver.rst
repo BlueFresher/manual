@@ -1019,15 +1019,13 @@ Say Model
 Tackle Model
 --------------------------------------------------
 
-The tackle command is to accelerate the ball towards the player's body. Players can kick the ball that can not be kicked with the kick command by executing the tackle command. The success of tackle depends on a random probability related to the position of the ball. It can be obtained by the following formula::
+The tackle command is to accelerate the ball towards the player's body. Players can kick the ball that can not be kicked with the kick command by executing the tackle command. The success of tackle depends on a random probability related to the position of the ball. It can be obtained by the following formula:
 ::
 
 	The probability of a tackle failure when the ball is in front of the player is:
-
 	fail_prob = (player_to_ball.x / tackle_dist)^tackle_exponent + (player_to_ball.y / tackle_width)^tackle_exponent	
 
 	The probability of a tackle failure when the ball is behind the player is:
-	
 	fail_prob = (player_to_ball.x / tackle_back_dist)^tackle_exponent + (player_to_ball.y / tackle_back__width)^tackle_exponent
 	
 	The probability of processing success is:
