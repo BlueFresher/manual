@@ -1019,6 +1019,28 @@ Say Model
 Tackle Model
 --------------------------------------------------
 
+Players can tackle a ball that cannot be kicked with 
+a kick instruction, and successful tackle decisions 
+depend on a random probability related to the position 
+of the ball：
+
+                     Parameter for the tackle command
++-------------------------------------------------+-----------+
+|Parameter in ``server.conf``                     | Value     |
++=================================================+===========+
+|tackle_dist                                      |2.0        |
++-------------------------------------------------+-----------+
+|tackle_back_dist                                 |0.5        |
++-------------------------------------------------+-----------+
+|tackle_width                                     |1.25       |
++-------------------------------------------------+-----------+
+|tackle_cycles                                    |10         |
++-------------------------------------------------+-----------+
+|tackle_exponent                                  |6          |
++-------------------------------------------------+-----------+
+|tackle_power_rate                                |0.027      |
++-------------------------------------------------+-----------+
+
 --------------------------------------------------
 Turn Model
 --------------------------------------------------
@@ -1040,6 +1062,73 @@ Referee Model
 --------------------------------------------------
 Play Modes and referee messages
 --------------------------------------------------
+
+The change of the play mode is announced by the referee. Additionally, there are some
+referee messages announcing events like a goal or a foul. If you have a look into the
+server source code, you will notice some additional play modes that are currently not
+used. Both play modes and referee messages are announced using (referee String ),
+where String is the respective play mode or message string. The play modes are listed
+in Tab. 1, for the messages see Tab. 2.
+
+
+
+
+                		Table 1	Play Modes
+------------------------------------------------------------------------------------------
+Play Mode	   tc   subsequent play mode        comment  			        
+=========================================================================================
+before kick off    0    kick off OSide		 announce the *n*th goal for a team     
+
+play on                 free kick OSide          announce a foul			
+
+time over   		free kick OSide      					
+
+kick off Side    	time over	         sent if there was no opponent until 	
+			  		         the end of the second half		
+
+kick in Side            time over	         sent once the game is over		
+			  			 (if the time is ≥ second half and	
+			  			 the scores for each team are different)
+
+free kick Side          before kick off      					
+
+corner kick Side        before kick off      					
+
+goal Side               before kick off      					
+
+drop ball          0    before kick off      					
+
+offside Side      30    before kick off     
+
+where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
+tc is the time (in number of cycles) until the subsequent play mode will be announced
+
+
+
+                		Table 2	Referee Messages
++-------------------------+------+----------------------+---------------------------------------+
+|Message	 	  |tc    | subsequent play mode | comment  			        |
++=========================+======+======================+=======================================+
+|goal Side n              | 50   | kick off OSide	|announce the *n*th goal for a team     |
++-------------------------+------+----------------------+---------------------------------------+
+|foul Side                |  0   | free kick OSide      |announce a foul			|
++-------------------------+------+----------------------+---------------------------------------+
+|goalie catch ball Side   | 0    | free kick OSide      |					|
++-------------------------+------+----------------------+---------------------------------------+
+|time up without a team   |  0   | time over	        |sent if there was no opponent until 	|
+|			  |      |		        |the end of the second half		|
++-------------------------+------+----------------------+---------------------------------------+
+|time up                  |  0   | time over	        |sent once the game is over		|
+|			  |	 |			|(if the time is ≥ second half and	|
+|			  |	 |			|the scores for each team are different)|
++-----------------------  +------+----------------------+---------------------------------------+
+|half time                |  0   | before kick off      |					|
++---------------------- --+------+----------------------+---------------------------------------+
+|time extended            |  0   | before kick off      |					|
++-------------------------+------+----------------------+---------------------------------------+
+where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
+tc is the time (in number of cycles) until the subsequent play mode will be announced
+
 
 ==================================================
 The Soccer Simulation
