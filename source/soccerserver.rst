@@ -1021,21 +1021,21 @@ The tackle command is to accelerate the ball towards the player's body. Players 
 
 The probability of a tackle failure when the ball is in front of the player is:
 
-.. math::
+::
 
-fail_prob = (player_to_ball.x / tackle_dist)^tackle_exponent + (player_to_ball.y / tackle_width)^tackle_exponent
+	fail_prob = (player_to_ball.x / tackle_dist)^tackle_exponent + (player_to_ball.y / tackle_width)^tackle_exponent
 
-The probability of a tackle failure when the ball is behind the player is:
+	The probability of a tackle failure when the ball is behind the player is:
 
-.. math::
+::
 
-fail_prob = (player_to_ball.x / tackle_back_dist)^tackle_exponent + (player_to_ball.y / tackle_back__width)^tackle_exponent
+	fail_prob = (player_to_ball.x / tackle_back_dist)^tackle_exponent + (player_to_ball.y / tackle_back__width)^tackle_exponent
 
-The probability of processing success is:
+	The probability of processing success is:
 
-.. math::
+::
 
-tackle_prob = 1.0 – fail_prob
+	tackle_prob = 1.0 – fail_prob
 
 In this case, when the ball is in front of the player, it is used to *tackle_dist* (default is 2.0), otherwise it is used to **tackle_back_dist** (default is 0.5); **player_to_ball** is a vector from the player to the ball, relative to the body direction of the player. When the tackle command is successful, it will give the ball an acceleration in its own body direction.
 
