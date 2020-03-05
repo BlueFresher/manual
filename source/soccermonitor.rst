@@ -8,18 +8,6 @@ Soccer Monitor
 =================================================
 Introduction
 =================================================
-+-------------------------+------+----------------------+----------------------------------------+
-|Message	 	  |tc    | subsequent play mode | comment  			         |
-+=========================+======+======================+========================================+
-|goal Side n              | 50   | kick off OSide	|announce the *n*th goal for a team      |
-+-------------------------+------+----------------------+----------------------------------------+
-|foul Side                | 0    | free kick OSide      |announce a foul			 |
-+-------------------------+------+----------------------+----------------------------------------+
-|goalie catch ball Side   | 0    | free kick OSide      |					 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
-|			  |      |		        |the end of the second half		 |
-+-------------------------+------+----------------------+----------------------------------------+
 Soccer monitor provides a visual interface.
 Using the monitor we can watch a game vividly and control the proceeding of
 the game.
