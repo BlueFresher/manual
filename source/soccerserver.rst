@@ -1106,24 +1106,24 @@ tc is the time (in number of cycles) until the subsequent play mode will be anno
 
                 		Table 2	Referee Messages
 +-------------------------+------+----------------------+----------------------------------------+
-|Message	 	  |tc    | subsequent play mode | comment  			         |
+|Message	 	  |t<sub></sub>c    | subsequent play mode | comment  			         |
 +=========================+======+======================+========================================+
-|goal Side n              | 50   | kick off OSide	|announce the *n*th goal for a team      |
+|goal_Side_n              | 50   | kick_off_OSide	|announce the *n* th goal for a team      |
 +-------------------------+------+----------------------+----------------------------------------+
-|foul Side                | 0    | free kick OSide      |announce a foul			 |
+|foul_Side                | 0    | free_kick_OSide      |announce a foul			 |
 +-------------------------+------+----------------------+----------------------------------------+
-|goalie catch ball Side   | 0    | free kick OSide      |					 |
+|goalie_catch_ball_Side   | 0    | free_kick_OSide      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
+|time_up_without_a_team   | 0    | time_over	        |sent if there was no opponent until 	 |
 |			  |      |		        |the end of the second half		 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time up                  | 0    | time over	        |sent once the game is over		 |
+|time_up                  | 0    | time_over	        |sent once the game is over		 |
 |			  |	 |			|(if the time is ≥ second half and	 |
 |			  |	 |			|the scores for each team are different) |
 +-------------------------+------+----------------------+----------------------------------------+
-|half time                | 0    | before kick off      |					 |
+|half_time                | 0    | before_kick_off      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time extended            | 0    | before kick off      |					 |
+|time_extended            | 0    | before_kick_off      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
 
 where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
