@@ -1105,26 +1105,26 @@ tc is the time (in number of cycles) until the subsequent play mode will be anno
 
 
                 		Table 2	Referee Messages
-+-------------------------+------+----------------------+----------------------------------------+
-|Message	 	  |t<sub></sub>    | subsequent play mode | comment  			         |
-+=========================+======+======================+========================================+
-|goal_Side_n              | 50   | kick_off_OSide	|announce the *n* th goal for a team      |
-+-------------------------+------+----------------------+----------------------------------------+
-|foul_Side                | 0    | free_kick_OSide      |announce a foul			 |
-+-------------------------+------+----------------------+----------------------------------------+
-|goalie_catch_ball_Side   | 0    | free_kick_OSide      |					 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time_up_without_a_team   | 0    | time_over	        |sent if there was no opponent until 	 |
-|			  |      |		        |the end of the second half		 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time_up                  | 0    | time_over	        |sent once the game is over		 |
-|			  |	 |			|(if the time is ≥ second half and	 |
-|			  |	 |			|the scores for each team are different) |
-+-------------------------+------+----------------------+----------------------------------------+
-|half_time                | 0    | before_kick_off      |					 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time_extended            | 0    | before_kick_off      |					 |
-+-------------------------+------+----------------------+----------------------------------------+
++-------------------------+-----------------+----------------------+----------------------------------------+
+|Message	 	  |t<sub>c</sub>    | subsequent play mode | comment  			            |
++=========================+=================+======================+========================================+
+|goal_Side_n              | 50   	    | kick_off_OSide	   |announce the *n* th goal for a team     |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|foul_Side                | 0               | free_kick_OSide      |announce a foul			    |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|goalie_catch_ball_Side   | 0               | free_kick_OSide      |					    |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|time_up_without_a_team   | 0               | time_over	           |sent if there was no opponent until     |
+|			  |                 |		           |the end of the second half		    |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|time_up                  | 0               | time_over	           |sent once the game is over		    |
+|			  |	            |			   |(if the time is ≥ second half and	    |
+|			  |	            |			   |the scores for each team are different) |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|half_time                | 0               | before_kick_off      |					    |
++-------------------------+-----------------+----------------------+----------------------------------------+
+|time_extended            | 0               | before_kick_off      |					    |
++-------------------------+-----------------+----------------------+----------------------------------------+
 
 where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
