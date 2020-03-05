@@ -1086,12 +1086,12 @@ in Tab. 1, for the messages see Tab. 2.
 |time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
 |			  |      |		        |the end of the second half		 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time up                  || 0   || time over	        ||sent once the game is over		 |
-|			  ||	 ||			||(if the time is ≥ second half and	 |
-|			  ||	 ||			||the scores for each team are different)|
-+-----------------------  +------+----------------------+----------------------------------------+
+|time up                  | 0    | time over	        |sent once the game is over		 |
+|			  |	 |			|(if the time is ≥ second half and	 |
+|			  |	 |			|the scores for each team are different) |
++-------------------------+------+----------------------+----------------------------------------+
 |half time                | 0    | before kick off      |					 |
-+---------------------- --+------+----------------------+----------------------------------------+
++-------------------------+------+----------------------+----------------------------------------+
 |time extended            | 0    | before kick off      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
 
