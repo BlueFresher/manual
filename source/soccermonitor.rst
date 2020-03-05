@@ -20,6 +20,13 @@ the game.
 Getting started
 =================================================
 
+  Parameters for the visual sensors.
++---------------------------------------+-----------+
+|Parameter in ``server.conf``           |Value      |
++=======================================+===========+
+|server::sense_step                     |150        |
++---------------------------------------+-----------+
+
 To connect the soccer monitor with the soccer server, you can use the command
 following::
 
