@@ -16,11 +16,8 @@ Soccer Monitor
 |goalie catch ball Side   | 0    | free kick OSide      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
 |time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
-|			  |      |		        |the end of the second half		 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time up                  || 0   || time over	        ||sent once the game is over		 |
-|			  ||	 ||			||(if the time is ≥ second half and	 |
-|			  ||	 ||			||the scores for each team are different)|
+|time up                  | 0    | time over	        |sent once the game is over		 |
 +-----------------------  +------+----------------------+----------------------------------------+
 |half time                | 0    | before kick off      |					 |
 +---------------------- --+------+----------------------+----------------------------------------+
