@@ -29,10 +29,10 @@ Getting started
 |time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
 |			  |      |		        |the end of the second half		 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time up                  || 0   || time over	        ||sent once the game is over		 |
-|			  ||	 ||			||(if the time is ≥ second half and	 |
-|			  ||	 ||			||the scores for each team are different)|
-+-----------------------  +------+----------------------+----------------------------------------+
+|time up                  | 0    | time over	        |sent once the game is over		 |
+|			  |	 |			|(if the time is ≥ second half and	 |
+|			  |	 |			|the scores for each team are different) |
++-------------------------+------+----------------------+----------------------------------------+
 To connect the soccer monitor with the soccer server, you can use the command
 following::
 
