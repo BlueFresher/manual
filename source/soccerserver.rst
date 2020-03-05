@@ -1072,8 +1072,8 @@ Play Modes and referee messages
 
 	safsdfsdfsdf
 
-
 ..
+
 	
 The change of the play mode is announced by the referee. Additionally, there are some
 referee messages announcing events like a goal or a foul. If you have a look into the
