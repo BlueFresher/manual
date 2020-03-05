@@ -1040,7 +1040,8 @@ The probability of a tackle failure when the ball is in front of the player is:
 
 The probability of processing success is:
 
-tackle_prob = 1.0 – fail_prob
+.. math::
+	:tackle_prob = 1.0 – fail_prob
 
 In this case, when the ball is in front of the player, it is used to tackle_dist (default is 2.0), otherwise it is used to tackle_back_dist (default is 0.5); player_to_ball is a vector from the player to the ball, relative to the body direction of the player. When the tackle command is successful, it will give the ball an acceleration in its own body direction.
 
