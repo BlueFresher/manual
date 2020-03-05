@@ -1074,33 +1074,31 @@ in Tab. 1, for the messages see Tab. 2.
 +-------------------------+------+----------------------+----------------------------------------+
 |Play Mode	 	  |tc    | subsequent play mode | comment  			         |
 +=========================+======+======================+========================================+
-|‘before kick off         |0     |  kick off Side	|at the beginning of a half       	 |
+|before_kick_off          |0     |  kick off Side	|at the beginning of a half       	 |
 +-------------------------+------+----------------------+----------------------------------------+
-|play on                  |      |       		|during normal play			 |
+|play_on                  |      |       		|during normal play			 |
 +-------------------------+------+----------------------+----------------------------------------+
-|time over   		  |      |       		|					 |
+|time_over   		  |      |       		|					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|kick off Side            |      | 	        	|announce start of play 	 	 |
+|kick_off_Side            |      | 	        	|announce start of play 	 	 |
 |			  |      |		        |(after pressing the Kick Off button)	 |
 +-------------------------+------+----------------------+----------------------------------------+
-|kick in Side             |      | 	        	|sent once the game is over		 |
-|			  |	 |			|(if the time is ≥ second half and	 |
-|			  |	 |			|the scores for each team are different) |
+|kick_in_Side             |      | 	        	|					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|free kick Side           |      |      		|					 |
+|free_kick_Side           |      |      		|					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|corner kick Side         |      |       		|					 |
+|corner_kick_Side         |      |       		|					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|goal kick Side           |      |  play on      	|play mode changes once			 |
+|goal_kick_Side           |      |  play on      	|play mode changes once			 |
 |			  |	 |			|the ball leaves the penalty are	 |
 +-------------------------+------+----------------------+----------------------------------------+
-|goal Side                |      |     			|currently unused			 |
+|goal_Side                |      |     			|currently unused			 |
 +-------------------------+------+----------------------+----------------------------------------+
-|drop ball                |0     | play on	        |					 |
+|drop_ball                |0     | play on	        |					 |
 +-------------------------+------+----------------------+----------------------------------------+
-|offside Side             |30    | free kick Side       |for the opposite side			 |
+|offside_Side             |30    | free kick Side       |for the opposite side			 |
 +-------------------------+------+----------------------+----------------------------------------+
-where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
+where Side is either the character *l* or *r*, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
 
 
@@ -1127,7 +1125,7 @@ tc is the time (in number of cycles) until the subsequent play mode will be anno
 |time_extended            | 0    | before_kick_off      |					 |
 +-------------------------+------+----------------------+----------------------------------------+
 
-where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
+where Side is either the character *l* or *r*, OSide means opponent’s side.
 tc is the time (in number of cycles) until the subsequent play mode will be announced
 
 
