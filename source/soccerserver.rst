@@ -1106,7 +1106,7 @@ tc is the time (in number of cycles) until the subsequent play mode will be anno
 
                 		Table 2	Referee Messages
 +-------------------------+------+----------------------+----------------------------------------+
-|Message	 	  |t<sub></sub>c    | subsequent play mode | comment  			         |
+|Message	 	  |t<sub></sub>    | subsequent play mode | comment  			         |
 +=========================+======+======================+========================================+
 |goal_Side_n              | 50   | kick_off_OSide	|announce the *n* th goal for a team      |
 +-------------------------+------+----------------------+----------------------------------------+
