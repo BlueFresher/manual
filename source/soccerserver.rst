@@ -1073,38 +1073,6 @@ in Tab. 1, for the messages see Tab. 2.
 
 
 
-                		Table 1	Play Modes
-------------------------------------------------------------------------------------------
-Play Mode	   tc   subsequent play mode        comment  			        
-=========================================================================================
-before kick off    0    kick off OSide		 announce the *n*th goal for a team     
-
-play on                 free kick OSide          announce a foul			
-
-time over   		free kick OSide      					
-
-kick off Side    	time over	         sent if there was no opponent until 	
-			  		         the end of the second half		
-
-kick in Side            time over	         sent once the game is over		
-			  			 (if the time is ≥ second half and	
-			  			 the scores for each team are different)
-
-free kick Side          before kick off      					
-
-corner kick Side        before kick off      					
-
-goal Side               before kick off      					
-
-drop ball          0    before kick off      					
-
-offside Side      30    before kick off     
-
-where Side is either the character ‘l’ or ‘r’, OSide means opponent’s side.
-tc is the time (in number of cycles) until the subsequent play mode will be announced
-
-
-
                 		Table 2	Referee Messages
 +-------------------------+------+----------------------+---------------------------------------+
 |Message	 	  |tc    | subsequent play mode | comment  			        |
