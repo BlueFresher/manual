@@ -1030,10 +1030,8 @@ The tackle command is to accelerate the ball towards the player's body. Players 
 	
 	fail_prob = (player_to_ball.x / tackle_back_dist)^tackle_exponent + (player_to_ball.y / tackle_back__width)^tackle_exponent
 	
-
 	The probability of processing success is:
 
-.. math::
 	tackle_prob = 1.0 – fail_prob
 	
 ..
