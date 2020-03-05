@@ -17,22 +17,6 @@ the game.
 =================================================
 Getting started
 =================================================
-+-------------------------+------+----------------------+----------------------------------------+
-|Message	 	  |tc    | subsequent play mode | comment  			         |
-+=========================+======+======================+========================================+
-|goal Side n              | 50   | kick off OSide	|announce the *n*th goal for a team      |
-+-------------------------+------+----------------------+----------------------------------------+
-|foul Side                | 0    | free kick OSide      |announce a foul			 |
-+-------------------------+------+----------------------+----------------------------------------+
-|goalie catch ball Side   | 0    | free kick OSide      |					 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time up without a team   | 0    | time over	        |sent if there was no opponent until 	 |
-|			  |      |		        |the end of the second half		 |
-+-------------------------+------+----------------------+----------------------------------------+
-|time up                  | 0    | time over	        |sent once the game is over		 |
-|			  |	 |			|(if the time is ≥ second half and	 |
-|			  |	 |			|the scores for each team are different) |
-+-------------------------+------+----------------------+----------------------------------------+
 To connect the soccer monitor with the soccer server, you can use the command
 following::
 
